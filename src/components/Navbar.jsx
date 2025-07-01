@@ -57,28 +57,31 @@ const Navbar = () => {
         </div>
         <div>
           <a
-            href='#'
+            href='/'
             className='px-3 py-1 rounded hover:bg-gray-100 text-black'
           >
             Home
           </a>
           <a
-            href='#about'
+            href='/about'
             className='px-3 py-1 rounded hover:bg-gray-100 text-black'
           >
-            About Us
+            About
           </a>
           <a
-            href='#services'
+            href='/services'
             className='px-3 py-1 rounded hover:bg-gray-100 text-black'
           >
             Our Services
           </a>
         </div>
         <div className='flex items-center gap-4'>
-          <button className='bg-gray-800 text-white px-4 py-1.5 rounded hover:bg-gray-700 transition'>
+          <a
+            className='bg-gray-800 text-white px-4 py-1.5 rounded hover:bg-gray-700 transition'
+            href='/contact'
+          >
             Contact us
-          </button>
+          </a>
         </div>
       </nav>
     </>
