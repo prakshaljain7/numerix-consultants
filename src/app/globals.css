@@ -1,4 +1,33 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'CharisSIL';
+  src: url('/fonts/charis/CharisSIL-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Caveat';
+  src: url('/fonts/Caveat/static/Caveat-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto/static/Roboto-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-charis {
+  font-family: 'CharisSIL';
+}
+
+.font-caveat {
+  font-family: 'Caveat';
+}
 
 :root {
   --background: #ffffff;

@@ -6,15 +6,12 @@ const HeroSection = () => {
   return (
     <section className='w-full bg-[#E9EFE5] flex flex-col md:flex-row items-center justify-between px-12 py-12 md:py-20 gap-8'>
       <div className='flex flex-col gap-4 w-[60%]'>
-        <h1 className='text-[60px] font-bold leading-tight text-gray-900'>
+        <h1 className='text-[60px] font-bold font-charis leading-tight text-gray-900'>
           Empowering Businesses
           <br />
           Through Numbers
         </h1>
-        <h2
-          className='text-[90px] italic text-[#2b4747] font-medium mb-2'
-          style={{ fontFamily: 'cursive' }}
-        >
+        <h2 className='text-[90px] italic text-[#2b4747] font-medium mb-2 font-caveat'>
           You Grow - We Grow
         </h2>
         <p className='text-gray-700 mb-4'>
@@ -31,7 +28,7 @@ const HeroSection = () => {
           </button>
         </div>
       </div>
-      <div className='flex items-center justify-end'>
+      <div className='flex items-center justify-end w-[40%]'>
         <span className='text-gray-500'>
           <Image
             src={HeroBanner}

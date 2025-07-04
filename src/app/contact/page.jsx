@@ -30,7 +30,7 @@ export default function ContactPage() {
             </div>
             <div className='flex items-center gap-3 mb-2 text-gray-800'>
               <span className='material-icons'>email</span>
-              <span>Saavtika.Jain@NumericConsultants.in</span>
+              <span>Administrator@numerixconsultants.in</span>
             </div>
             <div className='flex items-center gap-3 mb-2 text-gray-800'>
               <span className='material-icons'>linkedin</span>

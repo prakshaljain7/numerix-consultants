@@ -18,7 +18,7 @@ const Navbar = () => {
               height={24}
               width={24}
             />
-            <span>+91-8630876257</span>
+            <span>+91-8630687257</span>
           </div>
           <div className='flex items-center gap-2'>
             <Image
@@ -28,7 +28,7 @@ const Navbar = () => {
               height={24}
               width={24}
             />
-            <span>Saavtika.Jain@NumerixConsultants.in</span>
+            <span>Administrator@numerixconsultants.in</span>
           </div>
           <a href='#' className='flex items-center gap-1 hover:underline'>
             <Image
@@ -44,16 +44,20 @@ const Navbar = () => {
       </nav>
       <nav className='w-full bg-[#E9EFE5] flex items-center justify-between px-6 py-2 text-sm font-medium'>
         <div className='flex items-center gap-2'>
-          <span className='font-bold text-lg flex items-center gap-1'>
-            <Image
-              src={NumerixLogo}
-              alt='Numerix Logo'
-              className='w-auto h-[24px] object-cover mt-[-8px]'
-              height={24}
-              width={24}
-            />
-            <span className='text-black'>NUMERIX CONSULTANTS</span>
-          </span>
+          <a href='/' className='px-3 py-1 rounded text-black'>
+            <span className='font-bold text-lg flex items-center gap-1'>
+              <Image
+                src={NumerixLogo}
+                alt='Numerix Logo'
+                className='w-auto h-[24px] object-cover mt-[-8px]'
+                height={24}
+                width={24}
+              />
+              <span className='text-black' style={{ fontFamily: 'Roboto' }}>
+                NUMERIX CONSULTANTS
+              </span>
+            </span>
+          </a>
         </div>
         <div>
           <a

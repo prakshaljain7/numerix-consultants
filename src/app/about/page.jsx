@@ -56,8 +56,7 @@ export default function AboutPage() {
             <p className='text-gray-700 text-lg text-center'>
               <span className='font-semibold'>Numerix Consultants</span> is a
               boutique offshore Accounting & Finance KPO based in India, founded
-              in 2024 by <span className='font-semibold'>CA Saavtika Jain</span>
-              , a former Deloitte Global auditor. Our team of qualified
+              in 2024, a former Deloitte Global auditor. Our team of qualified
               Chartered Accountants and finance experts is committed to
               providing precise, timely, and tech-enabled solutions to
               international businesses seeking reliable financial support.
