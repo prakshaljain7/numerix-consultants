@@ -22,7 +22,7 @@ export default function ContactPage() {
     };
     console.log(data);
     await fetch(
-      'https://script.google.com/macros/s/AKfycbwW4LrPJWGviNtkDXuOeZFND8KmBDa8LUuKnmRxoZ39olbY215pnJk06btwwNgiFvjV/exec',
+      'https://script.google.com/macros/s/AKfycbwWdrUuZj96VZcrQzIyFxC8dJ95BpBsC2O_-ZOR9zo6dc6tlL383q2gYkaso6zROmJt/exec',
       {
         method: 'POST',
         body: JSON.stringify({ ...data }),
@@ -86,14 +86,14 @@ export default function ContactPage() {
                   placeholder='Name'
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className='flex-1 rounded-full border border-[#E9EFE5] px-6 py-3 bg-transparent placeholder-gray-400 focus:outline-none'
+                  className='flex-1 rounded-full border border-[#E9EFE5] px-6 py-3 bg-transparent placeholder-gray-400 focus:outline-none text-black'
                 />
                 <input
                   type='email'
                   placeholder='E-mail'
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className='flex-1 rounded-full border border-[#E9EFE5] px-6 py-3 bg-transparent placeholder-gray-400 focus:outline-none'
+                  className='flex-1 rounded-full border border-[#E9EFE5] px-6 py-3 bg-transparent placeholder-gray-400 focus:outline-none text-black'
                 />
               </div>
               <input
@@ -101,21 +101,21 @@ export default function ContactPage() {
                 placeholder='Organization'
                 value={organization}
                 onChange={(e) => setOrganization(e.target.value)}
-                className='rounded-full border border-[#E9EFE5] px-6 py-3 bg-transparent placeholder-gray-400 focus:outline-none'
+                className='rounded-full border border-[#E9EFE5] px-6 py-3 bg-transparent placeholder-gray-400 focus:outline-none text-black'
               />
               <input
                 type='text'
                 placeholder='Subject'
                 value={subject}
                 onChange={(e) => setSubject(e.target.value)}
-                className='rounded-full border border-[#E9EFE5] px-6 py-3 bg-transparent placeholder-gray-400 focus:outline-none'
+                className='rounded-full border border-[#E9EFE5] px-6 py-3 bg-transparent placeholder-gray-400 focus:outline-none text-black'
               />
               <textarea
                 placeholder='Describe briefly'
                 rows={5}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                className='rounded-3xl border border-[#E9EFE5] px-6 py-3 bg-transparent placeholder-gray-400 focus:outline-none resize-none'
+                className='rounded-3xl border border-[#E9EFE5] px-6 py-3 bg-transparent placeholder-gray-400 focus:outline-none resize-none text-black'
               />
               <div className='flex justify-end mt-2'>
                 <button
