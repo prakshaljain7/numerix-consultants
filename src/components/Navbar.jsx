@@ -20,17 +20,23 @@ const Navbar = () => {
             />
             <span>+91-8630687257</span>
           </div>
-          <div className='flex items-center gap-2'>
-            <Image
-              src={EmailIcon}
-              alt='Email Icon'
-              className='w-auto h-[24px] object-cover'
-              height={24}
-              width={24}
-            />
-            <span>Administrator@numerixconsultants.in</span>
-          </div>
-          <a href='#' className='flex items-center gap-1 hover:underline'>
+          <a href='mailto:Administrator@numerixconsultants.in'>
+            <div className='flex items-center gap-2'>
+              <Image
+                src={EmailIcon}
+                alt='Email Icon'
+                className='w-auto h-[24px] object-cover'
+                height={24}
+                width={24}
+              />
+              <span>Administrator@numerixconsultants.in</span>
+            </div>
+          </a>
+          <a
+            href='https://www.linkedin.com/company/numerix-consultants/'
+            className='flex items-center gap-1 hover:underline'
+            target='_blank'
+          >
             <Image
               src={LinkedIcon}
               alt='LinkedIn Icon'

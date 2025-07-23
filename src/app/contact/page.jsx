@@ -1,9 +1,45 @@
+'use client';
 import Navbar from '@/components/Navbar';
-import React from 'react';
+import React, { useState } from 'react';
 import NumerixLogo from '../../assets/numerix-logo.png';
 import Image from 'next/image';
+import { useForm, ValidationError } from '@formspree/react';
 
 export default function ContactPage() {
+  // const [state, handleSubmit] = useForm('mjkoyejp');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [organization, setOrganization] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+  const handleSubmit = async (e) => {
+    const data = {
+      name,
+      email,
+      organization,
+      subject,
+      message,
+    };
+    console.log(data);
+    await fetch(
+      'https://script.google.com/macros/s/AKfycbwW4LrPJWGviNtkDXuOeZFND8KmBDa8LUuKnmRxoZ39olbY215pnJk06btwwNgiFvjV/exec',
+      {
+        method: 'POST',
+        body: JSON.stringify({ ...data }),
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+      }
+    );
+
+    alert('Thank you for your message! We will get back to you soon.');
+  };
+
+  // if (state.succeeded) {
+  //   alert('Thank you for your message! We will get back to you soon.');
+  // }
+
   return (
     <>
       <Navbar />
@@ -43,43 +79,53 @@ export default function ContactPage() {
               Thank you for your interest. Please fill out the form below for
               enquiries.
             </h2>
-            <form className='flex flex-col gap-4'>
+            <div className='flex flex-col gap-4'>
               <div className='flex flex-col md:flex-row gap-4'>
                 <input
                   type='text'
                   placeholder='Name'
-                  className='flex-1 rounded-full border border-[#e6efe2] px-6 py-3 bg-transparent placeholder-gray-400 focus:outline-none'
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  className='flex-1 rounded-full border border-[#E9EFE5] px-6 py-3 bg-transparent placeholder-gray-400 focus:outline-none'
                 />
                 <input
                   type='email'
                   placeholder='E-mail'
-                  className='flex-1 rounded-full border border-[#e6efe2] px-6 py-3 bg-transparent placeholder-gray-400 focus:outline-none'
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className='flex-1 rounded-full border border-[#E9EFE5] px-6 py-3 bg-transparent placeholder-gray-400 focus:outline-none'
                 />
               </div>
               <input
                 type='text'
                 placeholder='Organization'
-                className='rounded-full border border-[#e6efe2] px-6 py-3 bg-transparent placeholder-gray-400 focus:outline-none'
+                value={organization}
+                onChange={(e) => setOrganization(e.target.value)}
+                className='rounded-full border border-[#E9EFE5] px-6 py-3 bg-transparent placeholder-gray-400 focus:outline-none'
               />
               <input
                 type='text'
                 placeholder='Subject'
-                className='rounded-full border border-[#e6efe2] px-6 py-3 bg-transparent placeholder-gray-400 focus:outline-none'
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
+                className='rounded-full border border-[#E9EFE5] px-6 py-3 bg-transparent placeholder-gray-400 focus:outline-none'
               />
               <textarea
                 placeholder='Describe briefly'
                 rows={5}
-                className='rounded-3xl border border-[#e6efe2] px-6 py-3 bg-transparent placeholder-gray-400 focus:outline-none resize-none'
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                className='rounded-3xl border border-[#E9EFE5] px-6 py-3 bg-transparent placeholder-gray-400 focus:outline-none resize-none'
               />
               <div className='flex justify-end mt-2'>
                 <button
-                  type='submit'
+                  onClick={handleSubmit}
                   className='bg-[#183232] text-white font-semibold px-10 py-3 rounded-2xl hover:bg-[#1a4343] transition'
                 >
                   Let's get talking!
                 </button>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>

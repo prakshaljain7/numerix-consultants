@@ -20,12 +20,16 @@ const HeroSection = () => {
           you move forward with confidence.
         </p>
         <div className='flex gap-4 w-[80%]'>
-          <button className='flex-1 border border-gray-700 px-4 py-2 rounded bg-white transition text-gray-800'>
-            Book a consultation
-          </button>
-          <button className='flex-1 bg-[#1F3A3D] text-white px-4 py-2 rounded transition'>
-            Explore our services
-          </button>
+          <a href='/contact' className='flex-1'>
+            <button className='border border-gray-700 px-4 py-2 rounded bg-white transition text-gray-800 w-full'>
+              Book a consultation
+            </button>
+          </a>
+          <a href='/services' className='flex-1'>
+            <button className='border border-gray-700 px-4 py-2 rounded bg-[#1F3A3D] text-white transition w-full'>
+              Explore our services
+            </button>
+          </a>
         </div>
       </div>
       <div className='flex items-center justify-end w-[40%]'>
