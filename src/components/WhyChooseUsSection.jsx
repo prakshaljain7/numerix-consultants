@@ -4,16 +4,17 @@ import TickImage from '../assets/status_success.png';
 import Image from 'next/image';
 
 const reasons = [
-  'Experienced & Qualified Team',
-  'Multi-country Knowledge & Compliance Expertise',
-  'Strong Data Security Practices',
-  'Real-time Communication (Live-calls, Dashboards, Weekly Summaries)',
-  'Cost-effective Solutions Without Compromising Quality',
+  'Cost-effective, high-quality solutions',
+  'Complete accounting expertise',
+  'Built for every stage of business',
+  'Live calls for real-time support',
+  'Robust data security measures',
+  'Experienced and qualified team of chartered accountants',
 ];
 
 const WhyChooseUsSection = () => {
   return (
-    <section className='w-full bg-[#f3f6ef] flex flex-col md:flex-row items-center px-16 py-16 gap-[10%] justify-center'>
+    <section className='w-full bg-[#E9EFE5] flex flex-col md:flex-row items-center px-16 py-16 gap-[10%] justify-center mt-[100px]'>
       <div className='flex items-center justify-center w-[20%]'>
         <Image
           src={WhyImage}
@@ -24,7 +25,7 @@ const WhyChooseUsSection = () => {
         />
       </div>
       <div className='flex flex-col gap-4'>
-        <h2 className='text-[48px] font-bold mb-4 italic text-[#2b4747]'>
+        <h2 className='text-[48px] font-medium mb-4 text-[#2b4747] font-[Alkatra]'>
           Why NUMERIX CONSULTANTS?
         </h2>
         <ul className='flex flex-col gap-3'>

@@ -15,25 +15,25 @@ export default function AboutPage() {
       title: 'Our Vision',
       image: OurVision,
       alt: 'Vision Target',
-      text: 'To be a trusted offshore partner delivering intelligent, scalable finance solutions that empower global businesses to grow with confidence. To be the leading global provider of Accounting & Finance services, recognized for our expertise, innovation, and commitment to client success.',
+      text: 'Our vision is to redefine global finance outsourcing by delivering intelligent, high-impact accounting solutions tailored to your business’s unique needs, driven by innovation, precision, and an unshakeable focus on success.',
     },
     {
       title: 'Our Mission',
       image: OurMission,
       alt: 'Mission Rocket',
-      text: 'To deliver exceptional Accounting & Finance solutions that empower our clients to achieve their business goals, while fostering a culture of integrity, excellence, and continuous improvement. To simplify finance for our clients by offering transparent, responsive, and high-quality accounting and compliance services that align with global standards.',
+      text: 'Our mission is to make finance simple, reliable, and growth-focused, delivering accounting and compliance solutions with transparency, precision, and a relentless commitment to your success.',
     },
     {
       title: 'Our Story',
       image: OurStory,
       alt: 'Growth Story',
-      text: 'Numerix Consultants was founded with a vision to revolutionize the Accounting & Finance industry by offering innovative solutions tailored to the unique needs of our clients. Our journey began in India, where we quickly established ourselves as a leading KPO (Knowledge Process Outsourcing) provider. Today, we serve clients across multiple continents, leveraging our expertise to drive their success.',
+      text: 'It all started with one belief that finance should support ambition, not limit it. At Numerix, we simplify the complex, offering expert accounting solutions that help businesses save big, move faster, and grow with confidence in every decision they make.',
     },
     {
       title: 'Our Team',
       image: OurTeam,
       alt: 'Our Team',
-      text: 'Our team comprises seasoned professionals with over a decade of experience in the finance sector. We pride ourselves on our commitment to excellence, continuous learning, and client satisfaction. Each member of our team is dedicated to providing the highest level of service, ensuring that your financial needs are met with precision and efficiency.',
+      text: 'Behind every number is a team that cares. At Numerix, our seasoned professionals combine technical expertise with a client-first mindset, ensuring your financial goals are met with smart strategies, timely execution, and complete peace of mind.',
     },
   ];
 
@@ -54,12 +54,19 @@ export default function AboutPage() {
               Who Are We
             </h1>
             <p className='text-gray-700 text-lg text-center'>
-              <span className='font-semibold'>Numerix Consultants</span> is a
-              boutique offshore Accounting & Finance KPO based in India, founded
-              in 2024, a former Deloitte Global auditor. Our team of qualified
-              Chartered Accountants and finance experts is committed to
-              providing precise, timely, and tech-enabled solutions to
-              international businesses seeking reliable financial support.
+              At Numerix Consultants, we understand that running a business is
+              challenging, but your finances shouldn't be.
+              <br /> Founded in 2025, Numerix is a finance boutique based in
+              India committed to supporting businesses with dependable,
+              end-to-end finance solutions. Our dedicated team of professionals
+              simplify your financial operations, from routine bookkeeping to
+              audit assistance and compliance, reducing risk, saving time, and
+              fostering expansion so you can concentrate on growing your
+              company.
+              <br /> We assist you in leading with data rather than hypotheses
+              owing to our extensive experience and strong systems.
+              <br /> Therefore, we are here to make every number matter if you
+              are prepared to lead with clarity and control.
             </p>
           </div>
           <Image

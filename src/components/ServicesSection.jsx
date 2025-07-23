@@ -9,27 +9,27 @@ import Image from 'next/image';
 const services = [
   {
     title: 'Accounting & Book-keeping',
-    desc: 'Streamline your financial operations with our comprehensive accounting solutions, including bookkeeping, financial statements, tax compliance, and financial analysis.',
+    desc: 'Accurate and timely bookkeeping will help you stay organized and stress-free. We handle your financial documentation so you can focus on running and growing your business with confidence.',
     icon: Service1Image,
   },
   {
     title: 'Financial Reporting & Analysis',
-    desc: 'Enhance your business growth with our finance services, including budgeting, cash flow management, financial planning, and risk management.',
+    desc: 'Enhance your business growth by transforming raw data into insightful reports with our services like budgeting, cash flow management, financial planning and risk management.',
     icon: Service2Image,
   },
   {
-    title: 'Internal Controls & Audit Support',
-    desc: 'Safeguard your business with robust internal controls, including risk assessment, control design, compliance audits, and continuous monitoring.',
+    title: 'Internal Controls, SOX  & Audit Support',
+    desc: 'Strengthen your financial integrity with robust internal controls, ensuring compliance, minimizing risks, and maximizing operational transparency.',
     icon: Service3Image,
   },
   {
     title: 'Business Registration & Setup',
-    desc: 'Simplify the process of starting a business with our expert assistance in company formation, legal documentation, regulatory compliance, and consultation.',
+    desc: 'Starting up? We simplify the setup process, assisting you through company formation, legal documentation, regulatory compliance, and consultation. ',
     icon: Service4Image,
   },
   {
     title: 'Regulatory Compliance',
-    desc: 'Ensure your business meets all regulatory requirements with our advisory, compliance programs, audit support, and training services.',
+    desc: 'Stay ahead of evolving regulations. We make sure your company complies with all legal and tax requirements, lowering risks and maintaining complete compliance all year long. ',
     icon: Service5Image,
   },
 ];
@@ -38,17 +38,16 @@ const ServicesSection = () => {
   return (
     <section
       id='services'
-      className='w-full bg-[#183232] text-white py-16 px-4 flex flex-col items-center'
+      className='w-full bg-[#183232] text-white py-16 px-4 flex flex-col items-center mt-[100px]'
     >
       <h2 className='text-3xl md:text-4xl font-bold mb-2 text-[#E9EFE5]'>
         Our Services
       </h2>
       <p className='text-center max-w-[80%] mb-8 text-[#E9EFE5]'>
-        Numbers don&apos;t have to be boring—we make finance fun (and flawless)!
-        From crunching the books and decoding audits to setting up your dream
-        business and keeping you on the right side of regulations, we&apos;ve
-        got your back. Let us handle the spreadsheets while you handle the
-        spotlight.
+        From a growing startup to a well-established enterprise, we offer
+        complete, customized accounting solutions to help you lead with numbers
+        by transforming complicated data into understandable insights and useful
+        results.
       </p>
       <div className='flex items-center justify-center mb-8 w-[90%] gap-8'>
         <div className='w-[45%] h-[1px] bg-[#ACBDB3]' />
@@ -59,7 +58,7 @@ const ServicesSection = () => {
         {services.slice(0, 3).map((service) => (
           <div
             key={service.title}
-            className='bg-[#eaf3ef] text-[#183232] rounded-lg shadow p-6 flex flex-col gap-2 border border-gray-200'
+            className='bg-[#E9EFE5] text-[#183232] rounded-lg shadow p-6 flex flex-col gap-2 border border-gray-200'
           >
             <div className='flex items-center gap-4 mb-2'>
               <Image
@@ -82,7 +81,7 @@ const ServicesSection = () => {
         {services.slice(3).map((service) => (
           <div
             key={service.title}
-            className='bg-[#eaf3ef] text-[#183232] rounded-lg shadow p-6 flex flex-col gap-2 border border-gray-200'
+            className='bg-[#E9EFE5] text-[#183232] rounded-lg shadow p-6 flex flex-col gap-2 border border-gray-200'
           >
             <div className='flex items-center gap-4 mb-2'>
               <Image

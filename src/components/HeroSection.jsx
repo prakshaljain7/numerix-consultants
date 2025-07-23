@@ -15,15 +15,15 @@ const HeroSection = () => {
           You Grow - We Grow
         </h2>
         <p className='text-gray-700 mb-4'>
-          Whether you&apos;re a growing startup or a well-established
-          enterprise, we become your extended finance team — driving value,
-          accuracy, and efficiency in every transaction.
+          Need a finance partner who gets your business and fuels your financial
+          growth? Numerix Consultants delivers clarity and consistency, helping
+          you move forward with confidence.
         </p>
         <div className='flex gap-4 w-[80%]'>
-          <button className='flex-1 border border-gray-700 px-4 py-2 rounded hover:bg-gray-100 transition text-gray-800'>
+          <button className='flex-1 border border-gray-700 px-4 py-2 rounded bg-white transition text-gray-800'>
             Book a consultation
           </button>
-          <button className='flex-1 bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition'>
+          <button className='flex-1 bg-[#1F3A3D] text-white px-4 py-2 rounded transition'>
             Explore our services
           </button>
         </div>
