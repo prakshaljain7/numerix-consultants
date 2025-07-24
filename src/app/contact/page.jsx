@@ -22,9 +22,10 @@ export default function ContactPage() {
     };
     console.log(data);
     await fetch(
-      'https://script.google.com/macros/s/AKfycbwWdrUuZj96VZcrQzIyFxC8dJ95BpBsC2O_-ZOR9zo6dc6tlL383q2gYkaso6zROmJt/exec',
+      'https://script.google.com/macros/s/AKfycbwRDpM0COCLFvthw9g0GaAA1sriL4V1HJ3srGtX_MlN1M6q5HAtv2BZ0Cs5IDqytrIg/exec',
       {
         method: 'POST',
+        mode: 'no-cors',
         body: JSON.stringify({ ...data }),
         headers: {
           Accept: 'application/json',
@@ -35,10 +36,6 @@ export default function ContactPage() {
 
     alert('Thank you for your message! We will get back to you soon.');
   };
-
-  // if (state.succeeded) {
-  //   alert('Thank you for your message! We will get back to you soon.');
-  // }
 
   return (
     <>
@@ -79,12 +76,19 @@ export default function ContactPage() {
               Thank you for your interest. Please fill out the form below for
               enquiries.
             </h2>
-            <div className='flex flex-col gap-4'>
+            <div
+              className='flex flex-col gap-4'
+              // action={
+              //   'https://script.google.com/macros/s/AKfycbwvcdD5lOBsS6N9yorxufNTvZWxr56vKGFNROCw3C4xXfp7aCd4Kx0ivZ-TG0wqrnID/exec'
+              // }
+              // method='POST'
+            >
               <div className='flex flex-col md:flex-row gap-4'>
                 <input
                   type='text'
                   placeholder='Name'
                   value={name}
+                  name='name'
                   onChange={(e) => setName(e.target.value)}
                   className='flex-1 rounded-full border border-[#E9EFE5] px-6 py-3 bg-transparent placeholder-gray-400 focus:outline-none text-black'
                 />
@@ -92,12 +96,14 @@ export default function ContactPage() {
                   type='email'
                   placeholder='E-mail'
                   value={email}
+                  name='email'
                   onChange={(e) => setEmail(e.target.value)}
                   className='flex-1 rounded-full border border-[#E9EFE5] px-6 py-3 bg-transparent placeholder-gray-400 focus:outline-none text-black'
                 />
               </div>
               <input
                 type='text'
+                name='organization'
                 placeholder='Organization'
                 value={organization}
                 onChange={(e) => setOrganization(e.target.value)}
@@ -105,6 +111,7 @@ export default function ContactPage() {
               />
               <input
                 type='text'
+                name='subject'
                 placeholder='Subject'
                 value={subject}
                 onChange={(e) => setSubject(e.target.value)}
@@ -114,12 +121,14 @@ export default function ContactPage() {
                 placeholder='Describe briefly'
                 rows={5}
                 value={message}
+                name='message'
                 onChange={(e) => setMessage(e.target.value)}
                 className='rounded-3xl border border-[#E9EFE5] px-6 py-3 bg-transparent placeholder-gray-400 focus:outline-none resize-none text-black'
               />
               <div className='flex justify-end mt-2'>
                 <button
                   onClick={handleSubmit}
+                  // type='submit'
                   className='bg-[#183232] text-white font-semibold px-10 py-3 rounded-2xl hover:bg-[#1a4343] transition'
                 >
                   Let's get talking!
