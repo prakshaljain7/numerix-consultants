@@ -72,16 +72,22 @@ export default function ServicesPage() {
     <>
       <Navbar />
       <div className='min-h-screen bg-white pb-16'>
-        <div className='flex flex-row justify-between py-12 px-12 relative'>
-          <Image
-            src={ServicesImage}
-            alt='Our Services'
-            width={225}
-            height={190}
-            className='absolute w-[225px] h-[auto] top-12 left-12'
-          />
+        <div className='flex flex-col md:flex-row justify-between py-12 px-12 relative'>
+          <div className='flex flex-row items-center gap-4'>
+            <Image
+              src={ServicesImage}
+              alt='Our Services'
+              width={225}
+              height={190}
+              className='relative md:absolute w-[40%] md:w-[225px] h-[auto] md:top-12 md:left-12 z-0'
+            />
+            <h1 className='md:hidden text-4xl font-bold text-[#1F3A3D] mb-2 text-center md:text-left'>
+              Our Services
+            </h1>
+          </div>
+
           <div className='flex-1 flex flex-col items-center justify-center text-center'>
-            <h1 className='text-4xl font-bold text-[#1F3A3D] mb-2'>
+            <h1 className='hidden md:block text-4xl font-bold text-[#1F3A3D] mb-2'>
               Our Services
             </h1>
             <p className='text-center text-gray-700 max-w-2xl'>

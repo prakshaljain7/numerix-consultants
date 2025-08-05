@@ -125,7 +125,7 @@ export default function ContactPage() {
                 onChange={(e) => setMessage(e.target.value)}
                 className='rounded-3xl border border-[#E9EFE5] px-6 py-3 bg-transparent placeholder-gray-400 focus:outline-none resize-none text-black'
               />
-              <div className='flex justify-end mt-2'>
+              <div className='flex justify-center mt-2'>
                 <button
                   onClick={handleSubmit}
                   // type='submit'
