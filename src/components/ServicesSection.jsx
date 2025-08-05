@@ -38,7 +38,7 @@ const ServicesSection = () => {
   return (
     <section
       id='services'
-      className='w-full bg-[#183232] text-white py-16 px-4 flex flex-col items-center mt-[100px]'
+      className='w-full bg-[#183232] text-white py-16 px-4 flex flex-col items-center mt-0 md:mt-[100px]'
     >
       <h2 className='text-3xl md:text-4xl font-bold mb-2 text-[#E9EFE5]'>
         Our Services
@@ -49,12 +49,12 @@ const ServicesSection = () => {
         by transforming complicated data into understandable insights and useful
         results.
       </p>
-      <div className='flex items-center justify-center mb-8 w-[90%] gap-8'>
+      <div className='flex items-center justify-center mb-8 w-full md:w-[90%] gap-8'>
         <div className='w-[45%] h-[1px] bg-[#ACBDB3]' />
-        <div className='w-[30px] h-[30px] bg-[#ACBDB3] rounded-[50%]' />
+        <div className='w-[30px] h-[30px] bg-[#ACBDB3] rounded-[50%] flex' />
         <div className='w-[45%] h-[1px] bg-[#ACBDB3]' />
       </div>
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-[85%]'>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-full md:max-w-[85%]'>
         {services.slice(0, 3).map((service) => (
           <div
             key={service.title}
@@ -64,7 +64,7 @@ const ServicesSection = () => {
               <Image
                 src={service.icon}
                 alt='Hero Image'
-                className='w-[40px] h-auto'
+                className='w-[50px] md:w-[40px] h-auto'
                 height={40}
                 width={40}
               />
@@ -77,7 +77,7 @@ const ServicesSection = () => {
           </div>
         ))}
       </div>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-[50%] mt-6'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-full md:max-w-[50%] mt-6'>
         {services.slice(3).map((service) => (
           <div
             key={service.title}
@@ -87,7 +87,7 @@ const ServicesSection = () => {
               <Image
                 src={service.icon}
                 alt='Hero Image'
-                className='w-[40px] h-auto'
+                className='w-[50px] md:w-[40px] h-auto'
                 height={40}
                 width={40}
               />

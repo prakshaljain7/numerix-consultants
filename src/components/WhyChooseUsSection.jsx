@@ -14,8 +14,8 @@ const reasons = [
 
 const WhyChooseUsSection = () => {
   return (
-    <section className='w-full bg-[#E9EFE5] flex flex-col md:flex-row items-center px-16 py-16 gap-[10%] justify-center mt-[100px]'>
-      <div className='flex items-center justify-center w-[20%]'>
+    <section className='w-full bg-[#E9EFE5] flex flex-col md:flex-row items-center px-6 md:px-16 py-6 md:py-16 gap-[10%] justify-center mt-0 md:mt-[100px]'>
+      <div className='hidden md:flex items-center justify-center w-[20%]'>
         <Image
           src={WhyImage}
           alt='Hero Image'
@@ -24,11 +24,11 @@ const WhyChooseUsSection = () => {
           width={403}
         />
       </div>
-      <div className='flex flex-col gap-4'>
-        <h2 className='text-[48px] font-medium mb-4 text-[#2b4747] font-[Alkatra]'>
+      <div className='flex flex-col gap-1 md:gap-4'>
+        <h2 className='text-[24px] md:text-[48px] font-medium mb-1 md:mb-4 text-[#2b4747] font-[Alkatra]'>
           Why NUMERIX CONSULTANTS?
         </h2>
-        <ul className='flex flex-col gap-3'>
+        <ul className='flex flex-col gap-1 md:gap-3'>
           {reasons.map((reason) => (
             <li
               key={reason}
@@ -38,10 +38,10 @@ const WhyChooseUsSection = () => {
                 src={TickImage}
                 alt='Hero Image'
                 className='object-cover'
-                height={40}
-                width={40}
+                height={20}
+                width={20}
               />
-              <span className='text-[24px]'>{reason}</span>
+              <span className='text-[18px] md:text-[24px]'>{reason}</span>
             </li>
           ))}
         </ul>
