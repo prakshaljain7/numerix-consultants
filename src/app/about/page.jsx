@@ -40,20 +40,20 @@ export default function AboutPage() {
   return (
     <div className='min-h-screen bg-white'>
       <Navbar />
-      <div>
+      <div className='relative mt-5 md:mt-0'>
         <div className='flex flex-row items-center mx-6'>
           <Image
             src={AboutBannerLeft}
             alt='About Banner Left'
             width={200}
             height={200}
-            className='object-contain'
+            className='absolute md:relative object-contain top-0 left-0 z-0'
           />
-          <div>
+          <div className='position-relative z-10'>
             <h1 className='text-4xl font-bold mb-6 text-center text-[#1F3A3D] mt-6'>
               Who Are We
             </h1>
-            <p className='text-gray-700 text-lg text-center'>
+            <p className='text-gray-700 text-lg text-center mt-20 md:mt-0'>
               At Numerix Consultants, we understand that running a business is
               challenging, but your finances shouldn't be.
               <br /> Founded in 2025, Numerix is a finance boutique based in
@@ -74,7 +74,7 @@ export default function AboutPage() {
             alt='About Banner Right'
             width={200}
             height={200}
-            className='object-contain'
+            className='absolute md:relative object-contain top-0 right-0 z-0'
           />
         </div>
       </div>
@@ -82,7 +82,7 @@ export default function AboutPage() {
         {infoSections.map((section, index) => (
           <div
             key={section.title}
-            className={`mb-16 last:mb-0 flex gap-8 p-8 border-4 border-[#1F3A3D] align-items-center relative`}
+            className={`mb-4 md:mb-16 last:mb-0 flex gap-8 p-8 border-4 border-[#1F3A3D] align-items-center relative flex md:flex-row flex-col`}
           >
             <div className='absolute top-0 right-0'>
               <Image
@@ -90,22 +90,25 @@ export default function AboutPage() {
                 alt={'About Corner Decoration'}
                 width={225}
                 height={96}
-                className='w-[70px] h-auto'
+                className='hidden md:block w-[70px] h-auto'
               />
             </div>
 
-            <div className='min-w-[225px] h-[190px]'>
+            <div className='flex flex-row items-center min-w-[225px] md:h-[190px] gap-4'>
               <Image
                 src={section.image}
                 alt={section.alt}
-                width={225}
-                height={190}
-                className='w-[225px] h-[190px]'
+                width={65}
+                height={65}
+                className='w-[65px] md:w-[225px] h-[65px] md:h-[190px]'
               />
+              <h2 className='block md:hidden text-3xl font-bold text-[#1F3A3D]'>
+                {section.title}
+              </h2>
             </div>
 
             <div className='flex flex-col justify-center'>
-              <h2 className='text-3xl font-bold mb-4 text-[#1F3A3D]'>
+              <h2 className='hidden md:block text-3xl font-bold mb-4 text-[#1F3A3D]'>
                 {section.title}
               </h2>
               <p className='text-gray-700'>{section.text}</p>
