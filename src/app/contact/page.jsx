@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import NumerixLogo from '../../assets/numerix-logo.png';
 import Image from 'next/image';
 import EmailIcon from '../../assets/email-dark.png';
-import LinkedIcon from '../../assets/Linkedin_dark.png';
+import LinkedIcon from '../../assets/LinkedIn-dark.png';
 import PhoneIcon from '../../assets/call-dark.png';
 import { useForm, ValidationError } from '@formspree/react';
 
