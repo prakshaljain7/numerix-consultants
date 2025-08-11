@@ -91,13 +91,13 @@ const Navbar = () => {
             href='/about'
             className='px-3 py-1 rounded hover:bg-gray-100 text-black'
           >
-            About
+            About Us
           </a>
           <a
             href='/services'
             className='px-3 py-1 rounded hover:bg-gray-100 text-black'
           >
-            Our Services
+            Services
           </a>
         </div>
         <div className='hidden md:flex items-center gap-4'>
@@ -116,13 +116,13 @@ const Navbar = () => {
               href='/about'
               className='px-3 py-1 rounded hover:bg-gray-100 text-black'
             >
-              About
+              About Us
             </a>
             <a
               href='/services'
               className='px-3 py-1 rounded hover:bg-gray-100 text-black'
             >
-              Our Services
+              Services
             </a>
             <a
               href='/contact'

@@ -45,10 +45,10 @@ const services = [
     number: '04',
     title: 'Business Registration & Setup',
     description:
-      "Starting a business is exciting, but the paperwork doesn't have to be overwhelming. We help you navigate the legal and regulatory processes involved in launching your venture. From selecting the ideal business structure to registering for GST, PAN, and other licenses, we handle every step with precision. Our team ensures your business is set up on a solid foundation, compliant, efficient, and ready to grow from day one.",
+      "Starting a business is exciting, but the paperwork doesn't have to be overwhelming. We help you navigate the legal and regulatory processes involved in launching your venture. From selecting the ideal business structure to registering for EIN, VAT, Federal Tax IDs, and other international licenses, we handle every step with precision. Our team ensures your business is set up on a solid foundation, compliant, efficient, and ready to grow from day one.",
     bullets: [
       'Guidance on ideal business structure',
-      'PAN, TAN, and GST registration',
+      'EIN and VAT registrations',
       'Business name and licensing support',
       'Documentation and filing assistance',
     ],
@@ -57,9 +57,9 @@ const services = [
     number: '05',
     title: 'Regulatory Compliance',
     description:
-      "Compliance isn't just about avoiding penalties. It's about building a credible and trustworthy business. We take charge of all your statutory obligations, from filing tax returns and maintaining registers to meeting ROC deadlines and updating regulatory documentation. With a proactive approach, we ensure nothing slips through the cracks, keeping your operations smooth, lawful, and worry-free.",
+      'Compliance isn’t just about avoiding penalties. It’s about building a credible and trustworthy business. We take charge of all your statutory obligations, from filing Form 1120, CT600, Annual Returns to meeting companies house deadlines, FBAR reporting, and updating regulatory documentation. With a proactive approach, we ensure nothing slips through the cracks, keeping your operations smooth, lawful, and worry-free.',
     bullets: [
-      'Timely tax and GST filings',
+      'Timely tax and Form 1120, CT600 filling',
       'ROC and MCA documentation management',
       'Maintenance of statutory registers',
       'Alerts for regulatory updates and deadlines',
@@ -91,11 +91,13 @@ export default function ServicesPage() {
               Our Services
             </h1>
             <p className='text-center text-gray-700 max-w-2xl'>
-              We do the number crunching, so you can do the dreaming. From
-              launching your business to keeping the books squeaky clean, we
-              handle the money maze—taxes, audits, compliance, and more—without
-              the boring bits. You focus on growing. We'll focus on the fine
-              print.
+              Our job? To ensure your finances are one less thing to worry
+              about. From business setup to full-scale compliance and tax
+              planning, we offer expert-backed support with zero fluff.
+              <br /> We simplify the complex, eliminate the guesswork, and keep
+              your books spotless. So you can make confident decisions, stay
+              compliant, and focus entirely on building what matters most: your
+              business.
             </p>
           </div>
         </div>

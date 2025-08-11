@@ -55,18 +55,17 @@ export default function AboutPage() {
             </h1>
             <p className='text-gray-700 text-lg text-center mt-20 md:mt-0'>
               At Numerix Consultants, we understand that running a business is
-              challenging, but your finances shouldn't be.
-              <br /> Founded in 2025, Numerix is a finance boutique based in
-              India committed to supporting businesses with dependable,
-              end-to-end finance solutions. Our dedicated team of professionals
-              simplify your financial operations, from routine bookkeeping to
-              audit assistance and compliance, reducing risk, saving time, and
-              fostering expansion so you can concentrate on growing your
-              company.
-              <br /> We assist you in leading with data rather than hypotheses
-              owing to our extensive experience and strong systems.
-              <br /> Therefore, we are here to make every number matter if you
-              are prepared to lead with clarity and control.
+              challenging, but your finances shouldn't be. Founded in 2025,
+              Numerix is a finance boutique based in India committed to
+              supporting businesses with dependable, end-to-end finance
+              solutions. Our dedicated team of professionals simplify your
+              financial operations, from routine bookkeeping to audit assistance
+              and compliance, reducing risk, saving time, and fostering
+              expansion so you can concentrate on growing your company. We
+              assist you in leading with data rather than hypotheses owing to
+              our extensive experience and strong systems. Therefore, we are
+              here to make every number matter if you are prepared to lead with
+              clarity and control.
             </p>
           </div>
           <Image

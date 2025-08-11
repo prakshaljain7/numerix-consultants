@@ -11,9 +11,9 @@ const HeroSection = () => {
           <br />
           Through Numbers
         </h1>
-        <h2 className='text-[36px] md:text-[90px] italic text-[#2b4747] font-medium mb-2 font-caveat'>
+        {/* <h2 className='text-[36px] md:text-[90px] italic text-[#2b4747] font-medium mb-2 font-caveat'>
           You Grow - We Grow
-        </h2>
+        </h2> */}
         <p className='text-gray-700 mb-4'>
           Need a finance partner who gets your business and fuels your financial
           growth? Numerix Consultants delivers clarity and consistency, helping

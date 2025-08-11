@@ -44,10 +44,11 @@ const ServicesSection = () => {
         Our Services
       </h2>
       <p className='text-center max-w-[80%] mb-8 text-[#E9EFE5]'>
-        From a growing startup to a well-established enterprise, we offer
-        complete, customized accounting solutions to help you lead with numbers
-        by transforming complicated data into understandable insights and useful
-        results.
+        Numbers don’t have to be boring—we make finance fun (and flawless)! From
+        crunching the books and decoding audits to setting up your dream
+        business and keeping you on the right side of regulations, we’ve got
+        your back. Let us handle the spreadsheets while you handle the
+        spotlight.
       </p>
       <div className='flex items-center justify-center mb-8 w-full md:w-[90%] gap-8'>
         <div className='w-[45%] h-[1px] bg-[#ACBDB3]' />

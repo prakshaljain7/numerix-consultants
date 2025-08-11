@@ -3,6 +3,9 @@ import Navbar from '@/components/Navbar';
 import React, { useState } from 'react';
 import NumerixLogo from '../../assets/numerix-logo.png';
 import Image from 'next/image';
+import EmailIcon from '../../assets/email-dark.png';
+import LinkedIcon from '../../assets/linkedin-dark.png';
+import PhoneIcon from '../../assets/call-dark.png';
 import { useForm, ValidationError } from '@formspree/react';
 
 export default function ContactPage() {
@@ -58,16 +61,48 @@ export default function ContactPage() {
               Old-fashioned phone calls work too.
             </p>
             <div className='flex items-center gap-3 mb-2 text-gray-800'>
-              <span className='material-icons'>call</span>
+              <span className='material-icons'>
+                <Image
+                  src={PhoneIcon}
+                  alt='Phone Icon'
+                  className='w-auto h-[24px] object-cover'
+                  height={32}
+                  width={32}
+                />
+              </span>
               <span>+91-8630687257</span>
             </div>
             <div className='flex items-center gap-3 mb-2 text-gray-800'>
-              <span className='material-icons'>email</span>
+              <span className='material-icons'>
+                <Image
+                  src={EmailIcon}
+                  alt='Email Icon'
+                  className='w-auto h-[24px] object-cover'
+                  height={32}
+                  width={32}
+                />
+              </span>
               <span>Administrator@numerixconsultants.in</span>
             </div>
             <div className='flex items-center gap-3 mb-2 text-gray-800'>
-              <span className='material-icons'>linkedin</span>
-              <span>DEMO</span>
+              <span className='material-icons'>
+                <Image
+                  src={LinkedIcon}
+                  alt='LinkedIn Icon'
+                  className='w-auto h-[24px] object-cover'
+                  height={32}
+                  width={32}
+                />
+              </span>
+              <span>
+                <a
+                  href='https://www.linkedin.com/company/numerix-consultants/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  https://www.linkedin.com/company/numerix-consultants/
+                </a>
+              </span>
             </div>
           </div>
           {/* Right Side: Contact Form */}
